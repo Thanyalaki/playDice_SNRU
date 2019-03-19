@@ -55,15 +55,18 @@
                                 <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="XDJ-2e-sKf"/>
-                                    <constraint firstAttribute="width" constant="318" id="aKJ-KN-oJ2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="318" id="aKJ-KN-oJ2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                 <state key="normal" title="Ramdom Dice">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="ramdomDiceButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hnk-cP-mxI"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image4" translatesAutoresizingMaskIntoConstraints="NO" id="zh3-1c-hcP">
-                                <rect key="frame" x="280" y="367" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image4" translatesAutoresizingMaskIntoConstraints="NO" id="zh3-1c-hcP">
+                                <rect key="frame" x="277" y="367" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Sw9-ly-JaR"/>
                                     <constraint firstAttribute="height" constant="100" id="hHK-IJ-QuE"/>
@@ -92,6 +95,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="firstDicelmageView" destination="arV-4x-gbw" id="d3c-rY-6dP"/>
+                        <outlet property="secondDicelmageView" destination="gRy-Vj-OAL" id="hZ0-N5-Xfh"/>
+                        <outlet property="thirdDicelmageView" destination="zh3-1c-hcP" id="5LB-j2-8x4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
