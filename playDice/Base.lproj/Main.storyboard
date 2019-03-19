@@ -96,6 +96,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="SecondDicelmageView" destination="UH8-1C-Jke" id="gUR-Vo-Ubh"/>
                         <outlet property="firstDicelmageView" destination="arV-4x-gbw" id="d3c-rY-6dP"/>
                         <outlet property="secondDicelmageView" destination="gRy-Vj-OAL" id="hZ0-N5-Xfh"/>
                         <outlet property="thirdDicelmageView" destination="zh3-1c-hcP" id="5LB-j2-8x4"/>
